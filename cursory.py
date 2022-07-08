@@ -23,13 +23,13 @@ else:
 	if empData == 'John':
 		data = pd.read_csv("Data/John.csv")
 	elif empData == 'Kane':
-		data = pd.read_csv("/home/boss/Bombarding/projects/Activity Tracker/Data/Kane.csv")
+		data = pd.read_csv("Data/Kane.csv")
 	elif empData == 'Raj':
-		data = pd.read_csv("/home/boss/Bombarding/projects/Activity Tracker/Data/Raj.csv")
+		data = pd.read_csv("Data/Raj.csv")
 	elif empData == 'Steve':
-		data = pd.read_csv("/home/boss/Bombarding/projects/Activity Tracker/Data/Steve.csv")
+		data = pd.read_csv("Data/Steve.csv")
 	elif empData == 'William':
-		data = pd.read_csv("/home/boss/Bombarding/projects/Activity Tracker/Data/William.csv")
+		data = pd.read_csv("Data/William.csv")
 	df = pd.DataFrame(data)	
 	st.write(px.pie(df, names='application', title='Visiualization of overall application usage.'))
 	uniqueApps = sorted(df['application'].unique())
