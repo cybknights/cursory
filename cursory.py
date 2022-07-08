@@ -21,7 +21,7 @@ if empData == 'Select':
 	st.write("Need a data file to visualize the employee's activity.")
 else:
 	if empData == 'John':
-		data = pd.read_csv("/home/boss/Bombarding/projects/Activity Tracker/Data/John.csv")
+		data = pd.read_csv("//Data//John.csv")
 	elif empData == 'Kane':
 		data = pd.read_csv("/home/boss/Bombarding/projects/Activity Tracker/Data/Kane.csv")
 	elif empData == 'Raj':
