@@ -14,7 +14,7 @@ def appBilling(billingApps):
 		totalBill+=singleBill
 	st.write('**Total Bill:**$',round(totalBill,2))
 	st.download_button('Print Invoice', 'The estimated invoice amount for '+client+' on '+empData+' is CAD $'+str(round(totalBill,2)), file_name=empData+'_'+client+'.txt')
-empData = st.selectbox("Select an employee:", ('Select','John','Kane','Raj','Steve','William'), index=0)
+empData = st.selectbox("Select an employee:", ('Select','John','EMP1','Raj','Steve','William'), index=0)
 custom_date_parser = lambda x: dt.strptime(x, "%Y-%m-%d")
 if empData == 'Select':
 	st.write("Need a data file to visualize the employee's activity.")
