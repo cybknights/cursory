@@ -22,7 +22,7 @@ else:
 	if empData == 'John':
 		data = pd.read_csv("Data/John.csv", parse_dates=['date'], date_parser=custom_date_parser)
 	elif empData == 'Kane':
-		data = pd.read_csv("Data/Kane.csv",parse_dates=['date'], date_parser=custom_date_parser)
+		data = pd.read_csv("Data/EMP1.csv",parse_dates=['date'], date_parser=custom_date_parser)
 	elif empData == 'Raj':
 		data = pd.read_csv("Data/Raj.csv",parse_dates=['date'], date_parser=custom_date_parser)
 	elif empData == 'Steve':
