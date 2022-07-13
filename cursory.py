@@ -20,9 +20,7 @@ if empData == 'Select':
 	st.write("Need a data file to visualize the employee's activity.")
 else:
 	if empData == 'John':
-		url = 'https://drive.google.com/file/d/1hvO-r8uWKMYErymoYlm9R7kyrjjG3Gq3/view?usp=sharing'
-		path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
-		data = pd.read_csv(path, parse_dates=['date'], date_parser=custom_date_parser)
+		data = pd.read_csv("Data/John.csv", parse_dates=['date'], date_parser=custom_date_parser)
 	elif empData == 'Kane':
 		data = pd.read_csv("Data/Kane.csv",parse_dates=['date'], date_parser=custom_date_parser)
 	elif empData == 'Raj':
