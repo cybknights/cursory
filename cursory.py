@@ -2,8 +2,8 @@ from datetime import datetime as dt
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-st.set_page_config(layout="centered", page_title="System Activity Tracker")
-st.title("System Activity Tracker")
+st.set_page_config(layout="centered", page_title="Cursory")
+st.title("Cursory")
 st.write("This application helps you to track the user's system activities.")
 def appBilling(billingApps):
 	totalBill=0
