@@ -1,16 +1,3 @@
-!pip install -U -q PyDrive
-from pydrive.auth import GoogleAuth
-from pydrive.drive import GoogleDrive
-from google.colab import auth
-from oauth2client.client import GoogleCredentials
-
-auth.authenticate_user()
-gauth = GoogleAuth()
-gauth.credentials = GoogleCredentials.get_application_default()
-drive = GoogleDrive(gauth)
-fileDownloaded = drive.CreateFile({‘id’:’1hvO-r8uWKMYErymoYlm9R7kyrjjG3Gq3’})
-fileDownloaded.GetContentFile(‘John.csv’)
-
 from datetime import datetime as dt
 import streamlit as st
 import pandas as pd
@@ -33,7 +20,7 @@ if empData == 'Select':
 	st.write("Need a data file to visualize the employee's activity.")
 else:
 	if empData == 'John':
-		data = pd.read_csv("John.csv", parse_dates=['date'], date_parser=custom_date_parser)
+		data = pd.read_csv("Data/John.csv", parse_dates=['date'], date_parser=custom_date_parser)
 	elif empData == 'Kane':
 		data = pd.read_csv("Data/Kane.csv",parse_dates=['date'], date_parser=custom_date_parser)
 	elif empData == 'Raj':
